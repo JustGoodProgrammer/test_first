@@ -21,3 +21,10 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 22px;
 }
+
+.paragraph-4 {
+    font-style: oblique;
+    text-align: center;
+    font-size: 24px;
+    text-shadow: green 1px 0 10px;
+}
