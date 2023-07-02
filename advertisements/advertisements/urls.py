@@ -21,3 +21,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('app_advertisements.urls'))
 ]
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('app_lesson_4.urls'))
+]
