@@ -63,6 +63,13 @@ class Advertisement(models.Model):
         else:
             return self.updated_at.strftime("%d.%m.%Y в %H:%M:%S")
 
+    @admin.display(description='Фото')
+    def get_html_image(self):
+        if self.image:
+            return format_html(
+                '<img src="{}" style="max-width:80px; max-height:80px"></img>',
+                self.image.url
+            )
 
     def __str___(self):
         return f"Advertisement(id={self.id}, title={self.title}, price={self.price})"
