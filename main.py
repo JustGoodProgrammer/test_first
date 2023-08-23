@@ -1,9 +1,8 @@
-def strcounter(s):
-    s_count = {}
-    for sym in s:
-        s_count[sym] = s_count.get(sym, 0) + 1
-    for sym, count in s_count.items():
-        print(sym, count)
-strcounter('abckfaa')
-
-#yyhyhyhyhy
+for i in range(int(input())):
+    a = int(input())
+    b = bin(a-1)[2:]
+    if '111' in b:
+        b = b[b.rfind('1')-2:]
+        print(int(b, base=2))
+    else:
+        print(-1)
